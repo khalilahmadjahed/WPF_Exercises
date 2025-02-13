@@ -23,6 +23,8 @@ namespace WPF_Exercises
         public MainWindow()
         {
             InitializeComponent();
+            Myslider4.Value = 15;
+            txtBox.Text = Myslider4.Value.ToString(); 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
