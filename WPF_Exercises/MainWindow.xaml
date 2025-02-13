@@ -93,5 +93,10 @@
         <TextBlock FontSize="20" HorizontalAlignment="Center">TwoWay binding source</TextBlock>
         <TextBox Width="100" Margin="0 10 0 0" Text="{Binding ElementName=MySlider2, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Slider Name="MySlider2" Minimum="0" Maximum="100" IsSnapToTickEnabled="True" Margin="0 10 0 30"/>
+
+        <!--OneWayToSource mode binding source-->
+        <TextBlock FontSize="20" HorizontalAlignment="Center">OneWayToSource binding source</TextBlock>
+        <TextBox Width="100" Margin="0 10 0 0" Text="{Binding ElementName=MySlider3, Path=Value, Mode=OneWayToSource}"/>
+        <Slider Name="MySlider3" Margin="0 10 0 30" Minimum="0" Maximum="100" IsSnapToTickEnabled="True"/>
     </StackPanel>
 </Window>
