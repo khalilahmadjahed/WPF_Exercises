@@ -82,8 +82,16 @@
     </Grid>
     -->
     <StackPanel>
+        <!--OneWay mode binding source-->
         <TextBlock FontSize="20" HorizontalAlignment="Center">OneWay binding source</TextBlock>
-        <TextBox Width="100" Margin="10" Text="{Binding ElementName=MySlider, Path=Value, Mode=OneWay}"/>
-        <Slider IsSnapToTickEnabled="True" x:Name="MySlider" Minimum="0" Maximum="100" Margin="10 0 20 0" />
+        <!--Textbox is the Target-->
+        <TextBox Width="100" Margin="0 10 0 0" Text="{Binding ElementName=MySlider1, Path=Value, Mode=OneWay}"/>
+        <!--Slider is the binding source-->
+        <Slider IsSnapToTickEnabled="True" x:Name="MySlider1" Minimum="0" Maximum="100" Margin="0 10 0 30" />
+
+        <!--TwoWay mode binding source-->
+        <TextBlock FontSize="20" HorizontalAlignment="Center">TwoWay binding source</TextBlock>
+        <TextBox Width="100" Margin="0 10 0 0" Text="{Binding ElementName=MySlider2, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Slider Name="MySlider2" Minimum="0" Maximum="100" IsSnapToTickEnabled="True" Margin="0 10 0 30"/>
     </StackPanel>
 </Window>
