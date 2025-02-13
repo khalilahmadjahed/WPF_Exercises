@@ -66,6 +66,7 @@
         <Button Content="9" Grid.Row="02" Grid.Column="2" FontSize="20" Background="Magenta" Foreground="White" Click="Button_Click_8"/>
     </Grid>
     -->
+    <!-- Dependency Property
     <Grid>
         <Button Width="100" Height="200" Content="Hi">
             <Button.Style>
@@ -79,4 +80,10 @@
             </Button.Style>
         </Button>
     </Grid>
+    -->
+    <StackPanel>
+        <TextBlock FontSize="20" HorizontalAlignment="Center">OneWay binding source</TextBlock>
+        <TextBox Width="100" Margin="10" Text="{Binding ElementName=MySlider, Path=Value, Mode=OneWay}"/>
+        <Slider IsSnapToTickEnabled="True" x:Name="MySlider" Minimum="0" Maximum="100" Margin="10 0 20 0" />
+    </StackPanel>
 </Window>
