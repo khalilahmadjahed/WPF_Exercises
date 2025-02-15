@@ -23,17 +23,17 @@ namespace WPF_Exercises
         {
             InitializeComponent();
             List<Match> matches = new List<Match>();
-            matches.Add(new Match() { Team1 = "Barcellona", Score1 = 4, Score2 = 0, Team2 = "Real Madrid", Complition = 85 });
-            lbMaches.ItemsSource = matches;
+            matches.Add(new Match() { Team1 = "Barcellona", Score1 = 4, Score2 = 0, Team2 = "RealMadrid", Comprition = 85 }); 
+            lbMatches.ItemsSource = matches;
         }
     }
-
     public class Match
     {
         public string Team1 { get; set; }
         public int Score1 { get; set; }
         public int Score2 { get; set; }
         public string Team2 { get; set; }
-        public int Complition { get; set; }
+        public int Comprition { get; set; }
+       
     }
 }
