@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Exercises"
         mc:Ignorable="d"
-        Title="ListBox" Height="350" Width="600">
+        Title="ListBox" Height="350" Width="771">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

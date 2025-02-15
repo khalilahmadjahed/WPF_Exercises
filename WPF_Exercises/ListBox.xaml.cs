@@ -24,7 +24,11 @@ namespace WPF_Exercises
             InitializeComponent();
             List<Match> matches = new List<Match>();
             //matches.Add(new Match() { Team1 = "Barcellona", Score1 = 4, Score2 = 0, Team2 = "RealMadrid", Comprition = 85 }); 
-            matches.Add(new Match("Barca", 4, 0, "Real", 85));
+            matches.Add(new Match("Barcellona", 4, 0, "Real Madrid", 85));
+            matches.Add(new Match("PSG", 2, 1, "BVB Dortmund", 80));
+            matches.Add(new Match("Man United", 0, 3, "Man city", 70));
+            matches.Add(new Match("Bayern Munchen", 1, 3, "Leverkusen", 90));
+            matches.Add(new Match("Chelsea", 0, 3, "Brighton", 30));
             lbMatches.ItemsSource = matches;
         }
     }
