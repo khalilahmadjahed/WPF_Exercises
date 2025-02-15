@@ -32,7 +32,8 @@
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-            
         </ListBox>
+
+        <Button Grid.Column="1" Background="Green" Foreground="White" FontFamily="verdana" Click="Button_Click">Show Selected</Button>
     </Grid>
 </Window>

@@ -31,6 +31,22 @@ namespace WPF_Exercises
             matches.Add(new Match("Chelsea", 0, 3, "Brighton", 30));
             lbMatches.ItemsSource = matches;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbMatches.SelectedItem != null)
+            {
+                MessageBox.Show("Selected Match: "
+                    + (lbMatches.SelectedItem as Match).Team1 + " " +
+                    (lbMatches.SelectedItem as Match).Score1 + " : " +
+                    (lbMatches.SelectedItem as Match).Score2 + " " +
+                    (lbMatches.SelectedItem as Match).Team2);
+            }
+            else
+            {
+                MessageBox.Show("Please select a Match!");
+            }
+        }
     }
     public class Match
     {
